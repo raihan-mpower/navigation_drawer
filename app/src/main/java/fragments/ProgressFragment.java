@@ -1,4 +1,4 @@
-package com.sam.navdrawerlockedplease;
+package fragments;
 
 
 import android.os.Bundle;
@@ -7,16 +7,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.github.mikephil.charting.charts.LineChart;
+import com.sam.navdrawerlockedplease.R;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class graphFragment extends Fragment {
+public class ProgressFragment extends Fragment {
+
+
+
 
     //https://github.com/PhilJay/MPAndroidChart/wiki/Getting-Started
-    public graphFragment() {
+    public ProgressFragment() {
         // Required empty public constructor
     }
 
@@ -24,9 +27,7 @@ public class graphFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.bargraph, container, false);
-        LineChart chart = (LineChart) view.findViewById(R.id.chart);
-
+        View view = inflater.inflate(R.layout.progress, container, false);
         // Inflate the layout for this fragment
         return view;
     }
