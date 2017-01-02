@@ -141,6 +141,7 @@ public class MonthGraphFragment extends Fragment{
         }
         else {
             switch (item){
+                
                 case 1:
                     setMonthWorkLoadHHVisit();
                     break;
