@@ -5,11 +5,12 @@ import java.util.ArrayList;
 /**
  * Created by cyrus on 1/1/17.
  */
-public class WorkLoadDao {
+public class ProgressDao {
 
-    public ArrayList<Integer> getWorkLoadData(){
+    public ArrayList<Integer> getProgressData(){
         return null;
     }
+
     public int getHouseHoldVisit(){
         return 0;
     }
@@ -33,4 +34,5 @@ public class WorkLoadDao {
     public int getENCC(){
         return 0;
     }
+
 }

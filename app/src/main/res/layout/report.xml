@@ -1,0 +1,636 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#575858">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="রিপোর্ট"
+            android:id="@+id/textView"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="45dp"
+            android:layout_marginLeft="40dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"
+            android:layout_marginLeft="30dp"></LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="40dp">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="35dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:background="#85868A">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginBottom="30dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@drawable/button_background_home"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:layout_gravity="center">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:layout_width="65dp"
+                                    android:layout_height="65dp"
+                                    android:id="@+id/imageView16"
+                                    android:src="@drawable/hh_count_icon"
+                                    android:layout_gravity="center_horizontal|right"
+                                    android:layout_marginTop="25dp"
+                                    android:layout_marginLeft="10dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="30"
+                                    android:id="@+id/familyPlanning"
+                                    android:layout_gravity="center_horizontal|left"
+                                    android:textStyle="bold"
+                                    android:textSize="40dp"
+                                    android:textColor="#57728b"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="10dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="Family Planning"
+                                    android:id="@+id/textView49"
+                                    android:textColor="#6ca4cb"
+                                    android:minLines="2"
+                                    android:layout_gravity="left|top"
+                                    android:textSize="18dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="-10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:width="120dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@drawable/button_background_home"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:layout_gravity="center" >
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" >
+
+                                <ImageView
+                                    android:layout_width="65dp"
+                                    android:layout_height="65dp"
+                                    android:id="@+id/imageView17"
+                                    android:src="@drawable/child_service"
+                                    android:layout_gravity="center_horizontal|right"
+                                    android:layout_marginTop="25dp"
+                                    android:layout_marginLeft="10dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="30"
+                                    android:id="@+id/child"
+                                    android:layout_gravity="center_horizontal|left"
+                                    android:textStyle="bold"
+                                    android:textSize="40dp"
+                                    android:textColor="#57728b"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="10dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="Child"
+                                    android:id="@+id/textView51"
+                                    android:textColor="#6ca4cb"
+                                    android:minLines="2"
+                                    android:layout_gravity="left|top"
+                                    android:textSize="20dp"
+                                    android:width="120dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="-5dp"
+                                    android:layout_marginBottom="5dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center_horizontal" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Services"
+                    android:id="@+id/textView47"
+                    android:background="#00B8F1"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="70dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="35dp" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:background="#85868A" >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginBottom="30dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@drawable/button_background_home"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:layout_gravity="center" >
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" >
+
+                                <ImageView
+                                    android:layout_width="65dp"
+                                    android:layout_height="65dp"
+                                    android:id="@+id/imageView13"
+                                    android:src="@drawable/hh_count_icon"
+                                    android:layout_gravity="center_horizontal|right"
+                                    android:layout_marginTop="25dp"
+                                    android:layout_marginLeft="10dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="30"
+                                    android:id="@+id/liveBirth"
+                                    android:layout_gravity="center_horizontal|left"
+                                    android:textStyle="bold"
+                                    android:textSize="40dp"
+                                    android:textColor="#57728b"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="10dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="Live Birth"
+                                    android:id="@+id/textView41"
+                                    android:textColor="#6ca4cb"
+                                    android:minLines="2"
+                                    android:layout_gravity="left|top"
+                                    android:textSize="20dp"
+                                    android:width="120dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="-5dp"
+                                    android:layout_marginBottom="5dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@drawable/button_background_home"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:layout_gravity="center" >
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" >
+
+                                <ImageView
+                                    android:layout_width="65dp"
+                                    android:layout_height="65dp"
+                                    android:id="@+id/imageView14"
+                                    android:src="@drawable/hh_count_icon"
+                                    android:layout_gravity="center_horizontal|right"
+                                    android:layout_marginTop="25dp"
+                                    android:layout_marginLeft="10dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="30"
+                                    android:id="@+id/stillBirth"
+                                    android:layout_gravity="center_horizontal|left"
+                                    android:textStyle="bold"
+                                    android:textSize="40dp"
+                                    android:textColor="#57728b"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="10dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="Still Birth"
+                                    android:id="@+id/textView43"
+                                    android:textColor="#6ca4cb"
+                                    android:minLines="2"
+                                    android:layout_gravity="left|top"
+                                    android:textSize="20dp"
+                                    android:width="120dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="-5dp"
+                                    android:layout_marginBottom="5dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@drawable/button_background_home"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:layout_gravity="center" >
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" >
+
+                                <ImageView
+                                    android:layout_width="65dp"
+                                    android:layout_height="65dp"
+                                    android:id="@+id/imageView19"
+                                    android:src="@drawable/hh_count_icon"
+                                    android:layout_gravity="center_horizontal|right"
+                                    android:layout_marginTop="25dp"
+                                    android:layout_marginLeft="10dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="30"
+                                    android:id="@+id/abortionORmiscarrige"
+                                    android:layout_gravity="center_horizontal|left"
+                                    android:textStyle="bold"
+                                    android:textSize="40dp"
+                                    android:textColor="#57728b"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="10dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="Abortion or Miscarrige"
+                                    android:id="@+id/textView56"
+                                    android:textColor="#6ca4cb"
+                                    android:minLines="2"
+                                    android:layout_gravity="left|top"
+                                    android:textSize="18dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="-10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:width="120dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Pregnancy Outcome"
+                    android:id="@+id/textView44"
+                    android:background="#00B8F1"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="35dp" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:background="#85868A" >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginBottom="30dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@drawable/button_background_home"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:layout_gravity="center" >
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" >
+
+                                <ImageView
+                                    android:layout_width="65dp"
+                                    android:layout_height="65dp"
+                                    android:id="@+id/imageView15"
+                                    android:src="@drawable/hh_count_icon"
+                                    android:layout_gravity="center_horizontal|right"
+                                    android:layout_marginTop="25dp"
+                                    android:layout_marginLeft="10dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="30"
+                                    android:id="@+id/atBirth"
+                                    android:layout_gravity="center_horizontal|left"
+                                    android:textStyle="bold"
+                                    android:textSize="40dp"
+                                    android:textColor="#57728b"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="10dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="At Birth"
+                                    android:id="@+id/textView58"
+                                    android:textColor="#6ca4cb"
+                                    android:minLines="2"
+                                    android:layout_gravity="left|top"
+                                    android:textSize="20dp"
+                                    android:width="120dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="-5dp"
+                                    android:layout_marginBottom="5dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@drawable/button_background_home"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:layout_gravity="center" >
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" >
+
+                                <ImageView
+                                    android:layout_width="65dp"
+                                    android:layout_height="65dp"
+                                    android:id="@+id/imageView18"
+                                    android:src="@drawable/psrf_form_icon"
+                                    android:layout_gravity="center_horizontal|right"
+                                    android:layout_marginTop="25dp"
+                                    android:layout_marginLeft="10dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="30"
+                                    android:id="@+id/atDelivery"
+                                    android:layout_gravity="center_horizontal|left"
+                                    android:textStyle="bold"
+                                    android:textSize="40dp"
+                                    android:textColor="#57728b"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="10dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="At Delivery"
+                                    android:id="@+id/textView46"
+                                    android:textColor="#6ca4cb"
+                                    android:minLines="2"
+                                    android:layout_gravity="left|top"
+                                    android:textSize="20dp"
+                                    android:width="120dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="-5dp"
+                                    android:layout_marginBottom="5dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center_horizontal" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Mortality"
+                    android:id="@+id/textView54"
+                    android:background="#00B8F1"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="70dp"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

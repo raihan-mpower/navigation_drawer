@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.sam.navdrawerlockedplease"
-        minSdkVersion 14
+        minSdkVersion 16
         targetSdkVersion 21
         versionCode 1
         versionName "1.0"
@@ -17,12 +17,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    sourceSets { main { java.srcDirs = ['src/main/java', 'src/main/java/service'] } }
+}
+repositories {
+    maven { url "https://jitpack.io" }
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:21.0.3'
     compile 'com.android.support:support-v4:21.0.3'
-    compile 'com.github.PhilJay:MPAndroidChart:v3.0.0'
+    compile 'com.github.PhilJay:MPAndroidChart:v2.1.6'
 
 }

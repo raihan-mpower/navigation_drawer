@@ -5,9 +5,7 @@ import android.content.res.Configuration;
 import android.graphics.Color;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -18,7 +16,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
@@ -26,7 +23,12 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
+import DAO.DatabaseHelper;
+import fragments.HomeFragment;
+import fragments.MonthGraphFragment;
+import fragments.ProgressFragment;
+import fragments.ReportFragment;
+import fragments.WorkLoadFragment;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -35,6 +37,7 @@ public class MainActivity extends ActionBarActivity {
     private ListView drawerList;
     private ActionBarDrawerToggle drawerToggle;
     private String[] drawerItems;
+
 
     public MainActivity() {
     }
@@ -66,6 +69,15 @@ public class MainActivity extends ActionBarActivity {
 //        ArrayAdapter  listadapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, values);
 //        drawerList.setAdapter(listadapter);
 //        listadapter.notifyDataSetChanged();
+
+        Fragment homeFragment = new HomeFragment();
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager
+                .beginTransaction()
+                .replace(R.id.content_frame, homeFragment)
+                .commit();
+
+
         drawerAdapter adapter = new drawerAdapter(this);
         drawerList.setAdapter(adapter);
         adapter.notifyDataSetChanged();
@@ -107,6 +119,7 @@ public class MainActivity extends ActionBarActivity {
         if(!isDrawerLocked) {
           //  getActionBar().setDisplayHomeAsUpEnabled(true);
         }
+
     }
 
     @Override
@@ -158,17 +171,40 @@ public class MainActivity extends ActionBarActivity {
 
         /** Swaps fragments in the main content view */
         private void selectItem(int position) {
-            Bundle bundle;
+
+            FragmentManager fragmentManager = getSupportFragmentManager();
             switch(position) {
+                case 0:
+                    Fragment homeFragment = new HomeFragment();
+                    fragmentManager.beginTransaction()
+                            .replace(R.id.content_frame, homeFragment)
+                            .commit();
+                    break;
+                case 1:
+                    Fragment workLoad = new WorkLoadFragment();
+                    fragmentManager.beginTransaction()
+                            .replace(R.id.content_frame, workLoad)
+                            .commit();
+                    break;
+                case 2:
+                    Fragment graphFragment = new ProgressFragment();
+                    fragmentManager.beginTransaction()
+                            .replace(R.id.content_frame, graphFragment)
+                            .commit();
+                    break;
+                case 3:
+
+                    break;
+                case 4:
+                    Fragment reportFragment = new ReportFragment();
+                    fragmentManager.beginTransaction()
+                            .replace(R.id.content_frame, reportFragment)
+                            .commit();
+                    break;
                 default:
-                    Toast.makeText(MainActivity.this,""+position,Toast.LENGTH_LONG).show();
                     break;
             }
-            Fragment fragment = new BlankFragment();
-            FragmentManager fragmentManager = getSupportFragmentManager();
-            fragmentManager.beginTransaction()
-                    .replace(R.id.content_frame, fragment)
-                    .commit();
+
 
             // Highlight the selected item, update the title, and close the drawer
             drawerList.setItemChecked(position, true);
@@ -222,3 +258,4 @@ public class MainActivity extends ActionBarActivity {
         }
     }
 }
+
