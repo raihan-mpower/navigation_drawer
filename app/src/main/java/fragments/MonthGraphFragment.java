@@ -92,10 +92,10 @@ public class MonthGraphFragment extends Fragment{
 
 
         ArrayList<String> labels = new ArrayList<>();
-        labels.add("sss");
-        labels.add("fff");
-        labels.add("sss");
-        labels.add("fff");
+        labels.add("jan");
+        labels.add("feb");
+        labels.add("march");
+        labels.add("april");
 
         BarDataSet dataset1 = new BarDataSet(entries, "খানা পরিদর্শন ");
         BarDataSet dataSet2 = new BarDataSet(entries1, "সক্ষম দম্পত্তি");
@@ -108,7 +108,9 @@ public class MonthGraphFragment extends Fragment{
         dataSets.add(dataSet3);
 
         BarData data = new BarData(labels,dataSets);
-        //dataset1.setColors();
+        dataset1.setColor(getResources().getColor(R.color.data1));
+        dataSet2.setColor(getResources().getColor(R.color.data2));
+        dataSet3.setColor(getResources().getColor(R.color.data3));
         barChart.setData(data);
         barChart.animateY(1000);
         barChart.setGridBackgroundColor(getResources().getColor(R.color.grid_background_color));
