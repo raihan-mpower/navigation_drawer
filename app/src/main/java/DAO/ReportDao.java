@@ -1,6 +1,7 @@
 package DAO;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * Created by cyrus on 1/1/17.
@@ -12,30 +13,30 @@ public class ReportDao {
     }
 
     public int getFamilyPlanning(){
-        return 0;
+        return new Random().nextInt(50);
     }
 
     public int getNewBorn(){
-        return 0;
+        return new Random().nextInt(50);
     }
 
     public int getLiveBirth(){
-        return 0;
+        return new Random().nextInt(50);
     }
 
     public int getStillBirth(){
-        return 0;
+        return new Random().nextInt(50);
     }
 
     public int getMisCarriageOrAbortion(){
-        return 0;
+        return new Random().nextInt(50);
     }
 
     public int getAtBirth(){
-        return 0;
+        return new Random().nextInt(50);
     }
 
     public int getAtDelivery(){
-        return 0;
+        return new Random().nextInt(50);
     }
 }

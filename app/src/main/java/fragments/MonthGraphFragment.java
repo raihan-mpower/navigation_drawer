@@ -15,6 +15,7 @@ import com.github.mikephil.charting.data.BarEntry;
 import com.sam.navdrawerlockedplease.R;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 import services.MonthService;
 import services.ProgressService;
@@ -70,25 +71,25 @@ public class MonthGraphFragment extends Fragment{
         }*/
 
         init();
-        entries.add(new BarEntry(10, 0));
-        entries.add(new BarEntry(20, 1));
-        entries.add(new BarEntry(10, 2));
-        entries.add(new BarEntry(20, 3));
+        entries.add(new BarEntry(new Random().nextInt(20), 0));
+        entries.add(new BarEntry(new Random().nextInt(20), 1));
+        entries.add(new BarEntry(new Random().nextInt(20), 2));
+        entries.add(new BarEntry(new Random().nextInt(20), 3));
 
 
         ArrayList<BarEntry> entries1 = new ArrayList<>();
-        entries1.add(new BarEntry(10, 0));
-        entries1.add(new BarEntry(20, 1));
-        entries1.add(new BarEntry(10, 2));
-        entries1.add(new BarEntry(20, 3));
+        entries1.add(new BarEntry(new Random().nextInt(20), 0));
+        entries1.add(new BarEntry(new Random().nextInt(20), 1));
+        entries1.add(new BarEntry(new Random().nextInt(20), 2));
+        entries1.add(new BarEntry(new Random().nextInt(20), 3));
 
 
         ArrayList<BarEntry> entries2 = new ArrayList<>();
-        entries2.add(new BarEntry(10, 0));
-        entries2.add(new BarEntry(20, 1));
+        entries2.add(new BarEntry(new Random().nextInt(20), 0));
+        entries2.add(new BarEntry(new Random().nextInt(20), 1));
 
-        entries2.add(new BarEntry(10, 2));
-        entries2.add(new BarEntry(20, 3));
+        entries2.add(new BarEntry(new Random().nextInt(20), 2));
+        entries2.add(new BarEntry(new Random().nextInt(20), 3));
 
 
         ArrayList<String> labels = new ArrayList<>();

@@ -3,7 +3,7 @@
     <color name="enable_color">#268EBD</color>
     <color name="dis_able_color">#AFB1B3</color>
     <color name="grid_background_color">#8A93A3</color>
-    <color name="data1">#ff0000 </color>
+    <color name="data1">#aa101f </color>
     <color name="data2">#00ff00</color>
     <color name="data3">#0000ff</color>
 </resources>
